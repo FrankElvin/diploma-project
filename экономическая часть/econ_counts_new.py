@@ -36,9 +36,13 @@ fot = sum(s) * hour_money
 print "Fot is : %s roubles" %round(fot)
 
 bills = fot * .3
+dop_zp = fot * .15
 naklad = fot * 1.8
 
-people_money = fot + bills + naklad
+print "bills is %.2f roubles" %bills
+print "dop_zp is %.2f roubles" %dop_zp
+print "naklad is %.2f roubles" %naklad
+people_money = fot + bills + dop_zp + naklad
 print "Non-production costs: %.3f mil. rub." %(people_money/10**6)
 
 all_money = people_money / 0.4
